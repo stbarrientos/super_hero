@@ -7,8 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+	<div class="top-half">
+	<div class="header">
+		<h2>Superheroes App</h2>
+	</div>
+	<div class="navbar">
+		<ul>
+			<li><%= link_to "Create New Hero", new_superhero_path %></li>
+		</ul>
+	</div>
+	</div>
+	<div class="shade">
+	</div>
+	<div class="content">
+	<%= yield %>
+	</div>
 
 </body>
 </html>

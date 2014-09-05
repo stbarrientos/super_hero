@@ -1,0 +1,9 @@
+<h2><%= @superhero.name %></h2>
+<%= image_tag(@superhero.image, size: "150") %>
+<p>Attributes:</p>
+<ul>
+	<li>Cape: <%= @superhero.has_cape %></li>
+	<li>Power: <%= @superhero.super_power %></li>
+</ul>
+
+<%= link_to "Back to Superheroes", superheros_path %>

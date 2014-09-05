@@ -1,0 +1,7 @@
+<h2>Heroes</h2>
+<ul>
+	<% @superheros.each do |s| %>
+	<li class="index"><%= image_tag(s.image, size: "100") %>
+	<p><%= link_to s.name, superhero_path(s.id) %> <%= link_to "Edit", edit_superhero_path(s.id) %> <%= link_to "Delete", superheros_path, method: :delete %></p></li>
+	<% end %>
+</ul>

@@ -1,0 +1,24 @@
+<%= form_for @superhero do |s| %>
+	<p>
+		<%= s.label :name %>
+		<%= s.text_field :name %>
+	</p>
+	<p>
+		<%= s.label "Cape" %>
+		<%= s.radio_button :cape, true %>
+		<%= s.label "No Cape" %>
+		<%= s.radio_button :cape, false %>
+	</p>
+	<p>
+		<%= s.label :super_power %>
+		<%= s.text_area :super_power %>
+	</p>
+	<p>
+		<%= s.label :image %>
+		<%= s.text_field :image %>
+	</p>
+	<p>
+		<%= s.submit %>
+	</p>
+
+<% end %>
